@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "live-server --verbose",
+    "sass": "sass --watch styles"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0"
+  }
+}

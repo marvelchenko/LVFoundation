@@ -1,0 +1,54 @@
+@import "./variables";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "./mobile";
+
+*,
+html {
+  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+header{
+background-image: url(../images/headerImage.png);
+  height: 100vmin;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  nav{
+    background: linear-gradient(269.99deg,
+     #000000 14.57%, rgba(0, 0, 0, 0.928298) 51.44%,
+      rgba(0, 0, 0, 0.145493) 103.43%, rgba(0, 0, 0, 0) 103.43%);
+      padding: 16px;
+      .logo{
+        display: flex;
+        align-items: center;
+        h5{
+          color: rgb(253, 144, 221);
+          font-size: 16px;
+          font-weight: bold;
+          span{
+            color: rgb(126, 180, 231);
+          font-size: 16px;
+          font-weight: bold;
+          }
+        }
+        p{
+          font-size: 11px;
+          color: #535353;
+        }
+      }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
