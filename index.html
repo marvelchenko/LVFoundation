@@ -12,8 +12,8 @@
 <body>
 
         <header>
-            <nav>
-                <div class="logo">
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
+                <div class="navbar align-content-center logo">
                     <img src="./images/logo-1.png" alt="">
                     <a href="">
                         <h5>LOVE <span>VISION</h5></span></h5>
@@ -22,21 +22,17 @@
                 </div>
                 <div class="mainmenu">
                     <ul>
-                        <li><a href="">Home</a></li>
+                        <li><a href="#" class="active">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Mission</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                          </li>
-                        <li><a href="">Mission-2</a></li>
+                        <li class="dropdown"><a href="">Get Involved <i class="fas fa-chevron-down ml-1 text-light"></i></a>
+                            <ul class="drop_menu">
+                                <li class="submenu"><a href="">Join LVF</a></li>
+                                <li class="submenu"><a href="">Partnership</a></li>
+                                <li class="submenu"><a href="">Donations</a></li>
+                            </ul>
+                        </li>
+                        <div class="connect"><button class="btn">Connect</button></div>
                     </ul>
                 </div>
             </nav>

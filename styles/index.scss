@@ -1,7 +1,6 @@
 @import "./variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import "./mobile";
 
 *,
 html {
@@ -21,18 +20,23 @@ background-image: url(../images/headerImage.png);
     background: linear-gradient(269.99deg,
      #000000 14.57%, rgba(0, 0, 0, 0.928298) 51.44%,
       rgba(0, 0, 0, 0.145493) 103.43%, rgba(0, 0, 0, 0) 103.43%);
-      padding: 16px;
+      padding: 1rem;
       .logo{
-        display: flex;
-        align-items: center;
+          margin: 0;
+        img{
+          width: 80px;
+        }
         h5{
           color: rgb(253, 144, 221);
           font-size: 16px;
           font-weight: bold;
+          margin: 0;
           span{
             color: rgb(126, 180, 231);
           font-size: 16px;
           font-weight: bold;
+          line-height: 0;
+          margin: 0;
           }
         }
         p{
@@ -40,6 +44,60 @@ background-image: url(../images/headerImage.png);
           color: #535353;
         }
       }
+      .mainmenu{
+        ul{
+          list-style: none;
+          display: flex;
+          align-items: center;
+          li {
+            list-style: none;
+            a{
+              height: 50px;
+              line-height: 50px;
+              padding: 0 20px;
+              text-decoration: none;
+              color: #fff;
+              display: block;
+              &:hover {
+                color: #fff;
+                background: rgb(102, 101, 101);
+              }
+              .active{
+                color: #fff;
+                background: rgb(102, 101, 101);
+              }
+            }
+            .drop_menu{ 
+              background: black;
+              width: 150px;
+              position: absolute;
+              padding: 2px 2px;
+              transition: all 0.8s linear;
+              top: 55px;
+              display: none; 
+              .submenu{
+                text-align: center;
+                &:not(:last-child){
+                  border-bottom: 1px solid #fff;
+                }
+              }
+            }
+            &:hover .drop_menu{
+              display: block;
+            }
+        }
+           
+          .btn{
+            background: linear-gradient(94.14deg, #F30B0B -12.72%, rgba(15, 11, 182, 0.92) 115.37%);
+          border-radius: 10px;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border: none;
+          text-transform: uppercase;
+          margin-left: 2rem;
+          }
+      }
+    }
   }
   
 }
