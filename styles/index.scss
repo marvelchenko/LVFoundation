@@ -2,12 +2,16 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*,
-html {
-  font-size: 14px;
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
+// *,
+// html {
+//   font-size: 14px;
+//   @media screen and (min-width: 768px) {
+//     font-size: 16px;
+//   }
+// }
+*{
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -20,7 +24,7 @@ background-image: url(../images/headerImage.png);
     background: linear-gradient(269.99deg,
      #000000 14.57%, rgba(0, 0, 0, 0.928298) 51.44%,
       rgba(0, 0, 0, 0.145493) 103.43%, rgba(0, 0, 0, 0) 103.43%);
-      padding: 1rem;
+      // padding: 1rem;
       .logo{
           margin: 0;
         img{
@@ -46,62 +50,123 @@ background-image: url(../images/headerImage.png);
       }
       .mainmenu{
         ul{
-          list-style: none;
           display: flex;
           align-items: center;
-          li {
-            list-style: none;
-            a{
-              height: 50px;
+          // align-items: center;
+        li{
+          list-style: none;
+          a{
+            height: 50px;
               line-height: 50px;
               padding: 0 20px;
               text-decoration: none;
               color: #fff;
               display: block;
+              text-transform: uppercase;
+              &.active{
+                color: #fff;
+                background: rgb(102, 101, 101);
+                border-bottom: 1px solid #f30b0b ;
+                transform: .5s;
+              }
               &:hover {
                 color: #fff;
                 background: rgb(102, 101, 101);
+                transform: .5s;
+                border-bottom: 1px solid #f30b0b ;
               }
-              .active{
-                color: #fff;
-                background: rgb(102, 101, 101);
-              }
-            }
-            .drop_menu{ 
-              background: black;
-              width: 150px;
-              position: absolute;
-              padding: 2px 2px;
-              transition: all 0.8s linear;
-              top: 55px;
-              display: none; 
-              .submenu{
-                text-align: center;
+          }
+          .drop_menu{
+            background: black;
+            width: 150px;
+            position: absolute;
+            padding: 2px 2px;
+            transition: all 0.8s linear;
+            top: 55px;
+            display: none; 
+            .submenu{
+              text-align: center;
                 &:not(:last-child){
                   border-bottom: 1px solid #fff;
                 }
-              }
             }
-            &:hover .drop_menu{
-              display: block;
-            }
-        }
-           
-          .btn{
-            background: linear-gradient(94.14deg, #F30B0B -12.72%, rgba(15, 11, 182, 0.92) 115.37%);
-          border-radius: 10px;
-          color: #fff;
-          padding: 0.5rem 1rem;
-          border: none;
-          text-transform: uppercase;
-          margin-left: 2rem;
           }
+          &:hover .drop_menu{
+            display: block;
+          }
+        }
+        .btn{
+          background: linear-gradient(94.14deg, #F30B0B -12.72%, rgba(15, 11, 182, 0.92) 115.37%);
+        border-radius: 10px;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        text-transform: uppercase;
+        // margin-left: 2rem;
+        }
       }
+
+    }
+       
+        
+        
+    
+    .navMenu {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 1px;
+        right: 30px;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 500;
+        cursor: pointer;
+     
+    }
+    .closeMenu{
+      // position: relative;
+      // top: 50px;
+      // text-align: center;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 70px;
+      cursor: pointer;
     }
   }
   
 }
 
+@media screen and (max-width: 750px){
+  header{
+    nav{
+      .mainmenu{
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 9999999;
+        left: 0;
+        top: 0;
+        background-color: rgb(51, 51, 51) ;
+        background-color: rgba(0, 0, 0, 0.928298);
+        overflow-y: hidden;
+        transform: 0.5s;
+        ul{
+          flex-direction: column;
+          position: relative;
+          top: 50px;
+          justify-content: center;
+          li{
+            .btn{
+            margin-left: -2rem;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
 
 
 
