@@ -11181,6 +11181,137 @@ header nav .closeMenu {
   font-size: 70px;
   cursor: pointer;
 }
+header .banner {
+  height: 80vmin;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .banner div h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px;
+  color: #fff;
+  letter-spacing: 0em;
+  text-align: center;
+}
+header .banner div .connect-2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+header .banner div .connect-2 .btn {
+  background: linear-gradient(94.14deg, #F30B0B -12.72%, rgba(15, 11, 182, 0.92) 115.37%);
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-transform: uppercase;
+}
+
+.section-1 .our-service {
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+.section-1 .our-service .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-1 .our-service .line h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  margin: 0px 5px;
+}
+.section-1 .our-service .line .line-1 {
+  width: 30px;
+  height: 2px;
+  background-color: #000000;
+}
+.section-1 .our-service .vision {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-1 .our-service .vision .vision-1 {
+  width: 60%;
+}
+.section-1 .learn-more-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section-1 .learn-more-1 .learn-more {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #2d3fa2;
+}
+.section-1 .learn-more-1 .learn-more .box-1 {
+  width: 33.3%;
+  line-height: 18.29px;
+  font-family: inherit;
+  font-size: 12px;
+}
+.section-1 .learn-more-1 .learn-more .box-1 .box-x {
+  padding: 1rem;
+}
+.section-1 .learn-more-1 .learn-more .box-1 .box-x .connect-2 {
+  text-align: center;
+  padding-top: 1rem;
+}
+.section-1 .learn-more-1 .learn-more .box-1 .box-x .connect-2 .btn {
+  background: linear-gradient(94.14deg, #F30B0B -12.72%, rgba(15, 11, 182, 0.92) 115.37%);
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-transform: uppercase;
+}
+.section-1 .learn-more-1 .learn-more .line-right {
+  width: 2px;
+  height: 80%;
+  background-color: #fff;
+}
+.section-1 .learn-more-1 .learn-more .box-2 {
+  width: 33.3%;
+  line-height: 18.29px;
+  font-family: inherit;
+  font-size: 13px;
+}
 
 @media screen and (max-width: 750px) {
   header nav .mainmenu {
@@ -11190,8 +11321,8 @@ header nav .closeMenu {
     z-index: 9999999;
     left: 0;
     top: 0;
-    background-color: #333333;
-    background-color: rgba(0, 0, 0, 0.928298);
+    background-color: #0a20e4;
+    background-color: rgba(15, 11, 182, 0.92);
     overflow-y: hidden;
     -webkit-transform: 0.5s;
             transform: 0.5s;
@@ -11209,5 +11340,72 @@ header nav .closeMenu {
   }
   header nav .mainmenu ul li .btn {
     margin-left: -2rem;
+  }
+  header .banner {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .banner div h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+  }
+
+  .section-1 .learn-more-1 .learn-more {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: #fff;
+  }
+  .section-1 .learn-more-1 .learn-more .box-1 {
+    width: 80%;
+    line-height: 18.29px;
+    background-color: #2d3fa2;
+    margin-top: 2rem;
+    font-family: inherit;
+    font-size: 12px;
+  }
+  .section-1 .learn-more-1 .learn-more .box-1 .box-x {
+    padding: 1rem;
+  }
+  .section-1 .learn-more-1 .learn-more .box-1 .box-x .connect-2 {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .section-1 .learn-more-1 .learn-more .box-1 .box-x .connect-2 .btn {
+    background: linear-gradient(94.14deg, #F30B0B -12.72%, rgba(15, 11, 182, 0.92) 115.37%);
+    border-radius: 10px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-transform: uppercase;
+  }
+  .section-1 .learn-more-1 .learn-more .line-right {
+    width: 2px;
+    height: 80%;
+    background-color: royalblue;
+  }
+  .section-1 .learn-more-1 .learn-more .box-2 {
+    width: 33.3%;
+    line-height: 18.29px;
+    font-family: inherit;
+    font-size: 13px;
   }
 }/*# sourceMappingURL=index.css.map */
